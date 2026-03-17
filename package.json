@@ -1,0 +1,35 @@
+{
+  "name": "PoCity",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @PoCity/db db:push",
+    "db:studio": "turbo -F @PoCity/db db:studio",
+    "db:generate": "turbo -F @PoCity/db db:generate",
+    "db:migrate": "turbo -F @PoCity/db db:migrate",
+    "deploy": "turbo -F @PoCity/infra deploy",
+    "destroy": "turbo -F @PoCity/infra destroy"
+  },
+  "dependencies": {
+    "@PoCity/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@PoCity/config": "workspace:*",
+    "@cloudflare/workers-types": "catalog:",
+    "@types/node": "^22.13.14",
+    "turbo": "^2.8.12",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@9.12.0"
+}

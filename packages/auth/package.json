@@ -1,0 +1,24 @@
+{
+  "name": "@PoCity/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@PoCity/db": "workspace:*",
+    "@PoCity/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@PoCity/config": "workspace:*",
+    "typescript": "^5"
+  }
+}

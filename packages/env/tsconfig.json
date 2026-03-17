@@ -1,0 +1,3 @@
+{
+  "extends": "@PoCity/config/tsconfig.base.json"
+}
