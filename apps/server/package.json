@@ -16,16 +16,18 @@
     "better-auth": "catalog:",
     "cors": "^2.8.5",
     "dotenv": "catalog:",
-    "express": "^5.1.0",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@PoCity/config": "workspace:*",
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.13.14",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.19.15",
+    "ts-node": "^10.9.2",
     "tsdown": "^0.16.5",
     "tsx": "^4.19.2",
-    "typescript": "^5"
+    "typescript": "^5.9.3"
   }
 }
